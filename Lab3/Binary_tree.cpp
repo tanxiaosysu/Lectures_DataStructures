@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 * Binary_tree.cpp
 *      Author: TanXiao
 */
@@ -103,15 +103,15 @@ void Binary_tree::recursive_output(Binary_node *in) {
     recursive_output(in->_right);
     if (in->right_empty) {
         for (int i = 0; i < in->_stage + 1; i++)
-            cout << "¡ª";
+            cout << "â€”";
         cout << "EMPTY" << std::endl;
     }
     for (int i = 0; i < in->_stage; i++)
-        cout << "¡ª";
+        cout << "â€”";
     cout << std::setw(5) << std::left << in->_data << std::endl;
     if (in->left_empty) {
         for (int i = 0; i < in->_stage + 1; i++)
-            cout << "¡ª";
+            cout << "â€”";
         cout << "EMPTY" << std::endl;
     }
     recursive_output(in->_left);
